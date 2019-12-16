@@ -1,0 +1,7 @@
+org/iiitb/Spec/DAO/SpecialiseDAO.class
+org/iiitb/Spec/Controller/CourseController.class
+org/iiitb/Spec/Controller/SpecilisationContoller.class
+org/iiitb/Spec/Bean/Course.class
+org/iiitb/Spec/Bean/Specilisation.class
+org/iiitb/Spec/DAO/DomainDAO.class
+org/iiitb/Spec/Util/SessionUtil.class

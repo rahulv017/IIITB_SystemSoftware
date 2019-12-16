@@ -1,0 +1,406 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Jumbotron Template · Bootstrap</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- <script src="js/ccea14c98b.js"></script>
+<script src="js/popper.min.js"></script> -->2
+<!-- <script>
+$(document).ready(function(){
+  $("#update-specialization-container").hide();
+  $("#create-specialization-container").hide();
+});
+</script> -->
+
+    <script src="myJs.js"></script>
+
+    <!-- Bootstrap core CSS -->
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link href="jumbotron.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">ERP</a>
+  
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<main role="main">
+
+  <div class="jumbotron" style="background-image: url(1.jpg);">
+    <div class="container" >
+
+      <h1 class="display-3" style="color:White;">Specializations</h1>
+
+      <p></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Add Specialization</h2>
+        <p>Add a new specialization. </p>
+        <p><a class="btn btn-secondary" href="#" id="create-specialization-button-main" role="button" style="background-color: DarkSlateGray">Create &raquo;</a></p>
+      </div>
+      
+      <div class="col-md-4">
+        <h2>View Specialization</h2>
+        <p>View already existing specializations.</p>
+        <p><a class="btn btn-secondary" href="#" id="view-specialization-button-main" role="button" style="background-color: DarkSlateGray">View &raquo;</a></p>
+      </div>
+    </div>
+
+   
+<!-- 
+        create specialization starts here:::::::::::::::::::::::::::::::: -->
+         <!-- <hr> -->
+      <div class="row" id="create-specialization-container">
+      <!-- 
+        create form starts here:::::::::::::::::::::: -->
+
+    <div class="col-md-4 order-md-2 mb-4">
+      <h4 class="d-flex justify-content-between align-items-center mb-3" >
+        <span class="text-muted">Choose Courses</span>
+        <span class="badge badge-secondary badge-pill" style="background-color:DarkSlateGray">0</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">course 1</h6>
+            <small class="text-muted">c 511</small>
+          </div>
+        
+          <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="1">
+                    <label class="custom-control-label" for="1"></label>
+          </div>
+          </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">course 2</h6>
+            <small class="text-muted">c 512</small>
+          </div>
+          <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="2">
+                    <label class="custom-control-label" for="2"></label>
+          </div>        
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">course 3</h6>
+            <small class="text-muted">c 513</small>
+          </div>
+          <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="3">
+                    <label class="custom-control-label" for="3"></label>
+          </div>
+        </li>
+        
+      </ul>
+
+    </div>
+
+    <!-- create form ends here:::::::::::::::::::::: -->
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Create Specialization</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          
+          
+        </div>
+
+        <form class="form-create-specialization" id="create-specialization" action="webapi/create-specialization" method="post"
+              enctype="multipart/form-data">
+
+        <div class="mb-3">
+          <label for="email">Specialization Name <span class="text-muted"></span></label>
+          <input type="email" class="form-control" id="c_Specialization_Name" placeholder="you@example.com" name="Specialization">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address">Minimum Credits</label>
+          <input type="text" class="form-control" id="c_Minimum_Credits" placeholder="1234 Main St" required name="MinimumCredits">
+          <div class="invalid-feedback">
+            Please enter your shipping address.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address2">Target Department<span class="text-muted"></span></label>
+          <input type="text" class="form-control" id="c_Target_Department" placeholder="Apartment or suite" name="TargetDepartment">
+        </div>
+      </form>
+
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit" style="background-color: DarkSlateGray" id="c_specialization_button">Create Specialization</button>
+      </form>
+    </div>
+    <hr>
+  </div>
+<!-- 
+      create specialization ends here:::::::::::::::::::::::::::::::::::::: -->
+
+
+
+
+
+
+
+<!-- 
+        Update specia starts here:::::::::::::::::::::::::::::::::::::::::: -->
+
+
+         
+      <div class="row" id="update-specialization-container">
+      <!-- 
+        create form starts here:::::::::::::::::::::: -->
+
+    <div class="col-md-4 order-md-2 mb-4">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Choose Courses</span>
+        <span class="badge badge-secondary badge-pill" style="background-color:DarkSlateGray">0</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">course 1</h6>
+            <small class="text-muted">c 511</small>
+          </div>
+        
+          <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="4">
+                    <label class="custom-control-label" for="4"></label>
+          </div>
+          </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">course 2</h6>
+            <small class="text-muted">c 512</small>
+          </div>
+          <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="5">
+                    <label class="custom-control-label" for="5"></label>
+          </div>        
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">course 3</h6>
+            <small class="text-muted">c 513</small>
+          </div>
+          <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="6">
+                    <label class="custom-control-label" for="6"></label>
+          </div>
+        </li>
+        
+      </ul>
+
+    </div>
+
+    <!-- create form ends here:::::::::::::::::::::: -->
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Update Specialization</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          
+          
+        </div>
+
+        
+
+        <div class="mb-3">
+          <label for="email">Specialization Name <span class="text-muted"></span></label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address">Minimum Credits</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+          <div class="invalid-feedback">
+            Please enter your shipping address.
+          </div>
+        </div>
+
+
+
+        <div class="mb-3">
+          <label for="address2">Target Department<span class="text-muted"></span></label>
+          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+        </div>
+
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit" style="background-color: DarkSlateGray">Update Specialization</button>
+      </form>
+    </div>
+  </div>
+
+<!-- 
+        update specia ends here:::::::::::::::::::::::::::::::::::::::::::::: -->
+<hr>  
+  </div> <!-- /container -->
+
+
+
+<!-- <div class="album py-5 bg-light"> -->
+    <div class="container">
+
+      <div class="row" id="cardview">
+        
+      
+        <div class="col-md-4" >
+          <div class="card mb-4 shadow-sm">
+            <img src="4.jpg " height="225px" width="100%" >
+            <div class="card-body">
+              <B><p class="card-text" style>System and Computer science</p></B>
+              <p class="card-text">CS 511</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" id="update1" style="background-color: DarkSlateGray">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                 </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="3.jpg " height="225px" width="100%" >
+            <div class="card-body">
+              <B><p class="card-text" style>System and Computer science</p></B>
+              <p class="card-text">CS 511</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <button type="button" class="btn btn-primary" id="update2" style="background-color: DarkSlateGray">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                 </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="2.jpg " height="225px" width="100%" >
+            <div class="card-body">
+              <B><p class="card-text" style>System and Computer science</p></B>
+              <p class="card-text">CS 511</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" id="update3" style="background-color: DarkSlateGray">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                 </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="5.jpg " height="225px" width="100%" >
+            <div class="card-body">
+              <B><p class="card-text" style>System and Computer science</p></B>
+              <p class="card-text">CS 511</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <button type="button" class="btn btn-primary" style="background-color: DarkSlateGray">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                  </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            
+            <img src="1.jpg " height="225px" width="100%" >
+            <div class="card-body">
+              <B><p class="card-text" style>System and Computer science</p></B>
+              <p class="card-text">CS 511</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <button type="button" class="btn btn-primary" style="background-color: DarkSlateGray">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                  </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+  <!-- </div> -->
+
+
+
+
+
+</main>
+
+<footer class="container">
+  <p>&copy; MTech 2019-2021</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-Iep5TjrwnXOp2AdreAjhlprhxI5Ix8Y3I/zJd1tNQZQmonaE3i6fTdrvIG9YjOWl" crossorigin="anonymous"></script></body>
+</html>
